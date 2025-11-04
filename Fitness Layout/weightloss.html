@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fitness Programs — 4 col layout + full sidebar image</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="weightloss.css" rel="stylesheet">
+</head>
+<body>
+ <header class="navbar">
+    <div class="logo">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Center Logo">
+    </div>
+
+     <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="program.html" class="active" >Programs</a>
+      <a href="tracking.html" >Tracking</a>
+      <a href="subsciption.html">Subscriptions</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+    
+
+    <div class="nav-icons">
+      <img src="Images/Photo by Joey Nicotra.png" alt="User" class="profile-pic" id="profilePic">
+     
+      <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown-header">My Accounts</div>
+          <a href="myprof.html">Personal Information</a>
+          <a href="myprogram.html" class="active">My program</a>
+          <a href="myacc.html">Password Manager</a>
+          <a href="logout.html">Logout</a>
+        </div>
+
+
+     <a href="heart.html"> <i class="fa-regular fa-heart"></i></a>
+      <i class="fa-regular fa-bell"></i>
+    </div>
+  </header>
+  <div class="search-bar">
+    <input type="text" placeholder="Search programs">
+    <i class="fa fa-search"></i>
+  </div>
+<!-- Notification Message Section -->
+<div class="notification-message-box" id="notificationBox">
+  <h3>Program Notification Messages</h3>
+  <p><strong>1. New program Available</strong></p>
+  <p>New program Alert!</p>
+  <p>Advanced FitnesWellness Techniques is now live. Start learning the latest in worldwide and user flows today.</p>
+</div>
+
+<!-- ===== Layout (Sidebar + Main) ===== -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="filter-section">
+        <h3>Types of Program</h3>
+        <label><input type="checkbox" checked> Weight loss</label>
+        <label><input type="checkbox"> Muscle gain</label>
+        <label><input type="checkbox"> Flexibility Mindfulness</label>
+        <label><input type="checkbox"> Endurance</label>
+        <label><input type="checkbox"> General fitness</label>
+        <label><input type="checkbox"> Strength training</label>
+
+        <h3>Program Type</h3>
+        <label><input type="radio" name="ptype"> Daily workouts</label>
+        <label><input type="radio" name="ptype"> Personal Trainings</label>
+        <label><input type="radio" name="ptype"> Corporate wellness</label>
+        <label><input type="radio" name="ptype"> Video Based session</label>
+        <label><input type="radio" name="ptype"> Home workouts</label>
+
+        <h3>Duration</h3>
+        <label><input type="radio" name="duration"> 7Days</label>
+        <label><input type="radio" name="duration"> 14Days</label>
+        <label><input type="radio" name="duration"> 30Days</label>
+        <label><input type="radio" name="duration"> 3Month</label>
+        <label><input type="radio" name="duration"> Ongoing</label>
+
+        <h3>Subscription Type</h3>
+        <label><input type="checkbox"> Basic plan</label>
+        <label><input type="checkbox"> Premium plan</label>
+        <label><input type="checkbox"> Standard plan</label>
+
+        <h3>Ratings</h3>
+        <label><input type="radio" name="rating" checked> 5 star <span class="stars">★★★★★</span></label>
+        <label><input type="radio" name="rating"> 4 star & Above</label>
+
+        <button class="submit-btn">Submit</button>
+      </div>
+    </aside>
+
+    <!-- Main Section -->
+    <main class="main">
+      <div class="cards-grid">
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 8.png"></div>
+          <div class="card-body">
+            <h3>Weight loss program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Thompson</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+             <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 12.png"></div>
+          <div class="card-body">
+            <h3>Muscle gain program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Martine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+              <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 13.png"></div>
+          <div class="card-body">
+            <h3>Corporate wellness</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Catherine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+             <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+      </div>
+
+<br>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 14.png"></div>
+          <div class="card-body">
+            <h3>Weight loss program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Thompson</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+              <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 15.png"></div>
+          <div class="card-body">
+            <h3>Muscle gain program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Martine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+             <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 16.png"></div>
+          <div class="card-body">
+            <h3>Corporate wellness</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Catherine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+             <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+    </div>
+
+    <br>
+    <div class="cards-grid">
+        <article class="card">
+       
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 16.png"></div>
+          <div class="card-body">
+            <h3>Weight loss program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Thompson</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+              <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 12.png"></div>
+          <div class="card-body">
+            <h3>Muscle gain program</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Martine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+              <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="heart-box"><i class="fa-regular fa-heart"></i></div>
+          <div class="imgwrap"><img src="Images/Top 5 Factors to Consider When Designing a Website… 13.png"></div>
+          <div class="card-body">
+            <h3>Corporate wellness</h3>
+            <div class="meta">
+              <div>6 weeks</div>
+              <div>Daily 1 hour session</div>
+              <div class="trainer">Trainer: Catherine</div>
+              <div class="price">Rupees: 2500/Month</div>
+            </div>
+              <a href="subsciption.html"> <button class="subscribe">Subscribe</button></a> 
+          </div>
+        </article>
+    </div>
+    </main>
+  </div>
+
+ <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo Column -->
+    <div class="footer-col">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Logo">
+    </div>
+
+    <!-- About Us Column -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Success</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Features Column -->
+    <div class="footer-col">
+      <h3>Feature</h3>
+      <ul>
+        <li><a href="#">HIIT</a></li>
+        <li><a href="#">Strength Yoga</a></li>
+        <li><a href="#">Cardio</a></li>
+        <li><a href="#">Cycling</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social Column -->
+    <div class="footer-col">
+      <h3>Contact & Social</h3>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Fitness@Fitnesscenter.com</p>
+     </div>
+<div class="footer-col">
+   <img src="Images/Gympossible _ Snapchat 2.png" alt="dumbbell" class="footer-image">
+
+   
+      <h4>Follow Us On :</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Fitness center. All rights reserved.</p>
+    <div class="policy-links">
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+  
+  <script>
+
+ const profilePic = document.getElementById("profilePic");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Toggle dropdown on profile pic click
+    profilePic.addEventListener("click", (e) => {
+      e.stopPropagation(); // prevent event bubbling
+      dropdownMenu.classList.toggle("active");
+    });
+
+    // Close dropdown when clicking anywhere else
+    document.addEventListener("click", (e) => {
+      if (!dropdownMenu.contains(e.target) && e.target !== profilePic) {
+        dropdownMenu.classList.remove("active");
+      }
+    });
+
+
+    
+       // Bell icon notification toggle
+const bellIcon = document.querySelector(".fa-bell");
+const notificationBox = document.getElementById("notificationBox");
+
+bellIcon.addEventListener("click", (e) => {
+  e.stopPropagation();
+  notificationBox.classList.toggle("active");
+});
+
+// Close when clicking anywhere else
+document.addEventListener("click", (e) => {
+  if (!notificationBox.contains(e.target) && !bellIcon.contains(e.target)) {
+    notificationBox.classList.remove("active");
+  }
+});
+  </script>
+  
+  </body>
+  </html>

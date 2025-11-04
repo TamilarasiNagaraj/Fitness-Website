@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fitness Programs — 4 col layout + full sidebar image</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="subscription.css" rel="stylesheet">
+</head>
+<body>
+ <header class="navbar">
+    <div class="logo">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Center Logo">
+    </div>
+
+   
+
+    
+
+     <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="program.html" >Programs</a>
+      <a href="tracking.html">Tracking</a>
+      <a href="subsciption.html"  class="active">Subscriptions</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+    
+
+    <div class="nav-icons">
+      <img src="Images/Photo by Joey Nicotra.png" alt="User" class="profile-pic" id="profilePic">
+     
+      <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown-header">My Accounts</div>
+          <a href="myprof.html">Personal Information</a>
+          <a href="myprogram.html">My program</a>
+          <a href="myacc.html">Password Manager</a>
+          <a href="logout.html">Logout</a>
+        </div>
+
+
+     <a href="heart.html"> <i class="fa-regular fa-heart"></i></a>
+      <i class="fa-regular fa-bell"></i>
+    </div>
+  </header>
+  <div class="search-bar">
+    <input type="text" placeholder="Search programs">
+    <i class="fa fa-search"></i>
+  </div>
+  <!-- Notification Message Section -->
+<div class="notification-message-box" id="notificationBox">
+  <h3>Program Notification Messages</h3>
+  <p><strong>1. New program Available</strong></p>
+  <p>New program Alert!</p>
+  <p>Advanced FitnesWellness Techniques is now live. Start learning the latest in worldwide and user flows today.</p>
+</div>
+  <section class="subscription-section">
+    <h2>Subscription</h2>
+
+    <div class="plans-container">
+
+      <!-- Basic Plan -->
+      <div class="plan-card">
+        <h3>Basic Plan</h3>
+        <h4>$7/Mon</h4>
+        <div class="trial trial-black">No Free Trail</div>
+        <div class="features">
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Limited Access only</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> Group challenges</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> All Resources</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> Nutrition tracking</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> Trainer support</p>
+        </div>
+        <div class="buttons">
+          <button class="subscribe-btn">Subscribe Now</button>
+          <button class="view-btn">View detail</button>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan-card">
+        <h3>Premium Plan</h3>
+        <h4 class="price-blue">$39/Mon</h4>
+        <div class="trial trial-blue">14 Days Free Trail</div>
+        <div class="features">
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Access to advanced workouts</p>
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Group challenges</p>
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> All Resources</p>
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Nutrition tracking</p>
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Trainer support</p>
+        </div>
+        <div class="buttons">
+          <button class="subscribe-btn">Subscribe Now</button>
+          <button class="view-btn">View detail</button>
+        </div>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="plan-card">
+        <h3>Standard Plan</h3>
+        <h4 class="price-red">$19/Mon</h4>
+        <div class="trial trial-red">7 Days Free Trail</div>
+        <div class="features">
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Access to advanced workouts</p>
+          <p><span class="icon-circle icon-yes"><i class="fa-solid fa-check"></i></span> Group challenges</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> All Resources</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> Nutrition tracking</p>
+          <p><span class="icon-circle icon-no"><i class="fa-solid fa-xmark"></i></span> Trainer support</p>
+        </div>
+        <div class="buttons">
+          <button class="subscribe-btn">Subscribe Now</button>
+          <button class="view-btn">View detail</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PLAN DETAILS SECTION -->
+<section class="plan-details-section">
+  <div class="plan-container">
+    <!-- Basic Plan -->
+    <div class="plan">
+      <h3>Basic Plan details</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Limited (Beginner only)</li>
+        <li><i class="fa-solid fa-circle-check"></i> 10 Videos</li>
+        <li><i class="fa-solid fa-circle-check"></i> Mobile Only</li>
+        <li><i class="fa-solid fa-circle-check"></i> ₹199/month</li>
+      </ul>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan">
+      <h3>Premium Plan details</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Basic to Intermediate</li>
+        <li><i class="fa-solid fa-circle-check"></i> 20+ Videos</li>
+        <li><i class="fa-solid fa-circle-check"></i> Mobile Only</li>
+        <li><i class="fa-solid fa-circle-check"></i> ₹499/month</li>
+      </ul>
+    </div>
+
+    <!-- Standard Plan -->
+    <div class="plan">
+      <h3>Standard Plan details</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Full Access (All levels)</li>
+        <li><i class="fa-solid fa-circle-check"></i> 200+ HD Tutorials</li>
+        <li><i class="fa-solid fa-circle-check"></i> Mobile + Web</li>
+        <li><i class="fa-solid fa-circle-check"></i> ₹999/month</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo Column -->
+    <div class="footer-col">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Logo">
+    </div>
+
+    <!-- About Us Column -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Success</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Features Column -->
+    <div class="footer-col">
+      <h3>Feature</h3>
+      <ul>
+        <li><a href="#">HIIT</a></li>
+        <li><a href="#">Strength Yoga</a></li>
+        <li><a href="#">Cardio</a></li>
+        <li><a href="#">Cycling</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social Column -->
+    <div class="footer-col">
+      <h3>Contact & Social</h3>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Fitness@Fitnesscenter.com</p>
+     </div>
+<div class="footer-col">
+   <img src="Images/Gympossible _ Snapchat 2.png" alt="dumbbell" class="footer-image">
+
+   
+      <h4>Follow Us On :</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Fitness center. All rights reserved.</p>
+    <div class="policy-links">
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+ const profilePic = document.getElementById("profilePic");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Toggle dropdown on profile pic click
+    profilePic.addEventListener("click", (e) => {
+      e.stopPropagation(); // prevent event bubbling
+      dropdownMenu.classList.toggle("active");
+    });
+
+    // Close dropdown when clicking anywhere else
+    document.addEventListener("click", (e) => {
+      if (!dropdownMenu.contains(e.target) && e.target !== profilePic) {
+        dropdownMenu.classList.remove("active");
+      }
+    });
+
+
+       // Bell icon notification toggle
+const bellIcon = document.querySelector(".fa-bell");
+const notificationBox = document.getElementById("notificationBox");
+
+bellIcon.addEventListener("click", (e) => {
+  e.stopPropagation();
+  notificationBox.classList.toggle("active");
+});
+
+// Close when clicking anywhere else
+document.addEventListener("click", (e) => {
+  if (!notificationBox.contains(e.target) && !bellIcon.contains(e.target)) {
+    notificationBox.classList.remove("active");
+  }
+});
+
+  </script>
+  
+  </body>
+  </html>

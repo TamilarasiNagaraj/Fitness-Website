@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #070606;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 900px;
+      background: #faf4f4;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .left {
+      width: 50%;
+    }
+
+    .left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      background-color: #faf4f4;
+      transition: all 0.5s ease;
+      position: relative;
+    }
+
+    .form-box {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 60px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 400px;
+      transition: 0.4s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ff3b30;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .form-box button {
+      width: 100%;
+      background-color: #ff3b30;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .form-box button:hover {
+      background-color: #e6332b;
+    }
+
+    .form-box p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .form-box p a {
+      color: #ff3b30;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Success message */
+    .success-message {
+      display: none;
+      position: absolute;
+      color: white;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      z-index: 3;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+
+    /* After success - right side turns orange */
+    .right.success {
+      background-color: #ff3b30;
+      color: white;
+      transition: background-color 0.6s ease;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 95%;
+      }
+      .left, .right {
+        width: 100%;
+      }
+      .form-box {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="Images/e2aeb1cf-dc08-4c01-bb68-0ed79d0a195d 1.png" alt="Gym Image" />
+    </div>
+
+    <div class="right" id="rightPanel">
+      <div class="form-box" id="formBox">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <input type="text" placeholder="Full Name"  />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Sign Up</button>
+          <p>Already have an account? <a href="register.html">Log in</a></p>
+        </form>
+      </div>
+      <div class="success-message" id="successMsg">Sign Up Successfully!<br></div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const rightPanel = document.getElementById('rightPanel');
+    const formBox = document.getElementById('formBox');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Animate background change
+      rightPanel.classList.add('success');
+      formBox.style.display = 'none';
+      successMsg.style.display = 'block';
+
+      // Redirect simulation (you can change this URL)
+      setTimeout(() => {
+        window.location.href = "home.html"; // change to your actual home page
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fitness Programs — 4 col layout + full sidebar image</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="logout.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Center Logo">
+    </div>
+
+     <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="program.html" >Programs</a>
+      <a href="tracking.html" >Tracking</a>
+      <a href="subsciption.html">Subscriptions</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+    
+
+    <div class="nav-icons">
+      <img src="Images/Photo by Joey Nicotra.png" alt="User" class="profile-pic" id="profilePic">
+     
+      <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown-header">My Accounts</div>
+          <a href="myprof.html">Personal Information</a>
+          <a href="myprogram.html">My program</a>
+          <a href="myacc.html">Password Manager</a>
+          <a href="logout.html">Logout</a>
+        </div>
+
+
+     <a href="heart.html"> <i class="fa-regular fa-heart"></i></a>
+      <i class="fa-regular fa-bell"></i>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search programs">
+    <i class="fa fa-search"></i>
+  </div>
+
+  <div class="notification-message-box" id="notificationBox">
+    <h3>Program Notification Messages</h3>
+    <p><strong>1. New program Available</strong></p>
+    <p>Advanced FitnesWellness Techniques is now live.</p>
+  </div>
+
+  <!-- Logout Section -->
+  <section class="account-section">
+    <h2 class="account-title">My Account</h2>
+
+    <div class="account-container">
+      <div class="account-sidebar">
+       <a href="myprof.html"> <button class="sidebar-btn">Personal Information</button></a>
+        <a href="myprogram.html"><button class="sidebar-btn">My program</button></a>
+        <a href="myacc.html"><button class="sidebar-btn">Password Manager</button></a>
+       <a href="logout.html"><button class="sidebar-btn active">Logout</button></a> 
+      </div>
+
+      <div class="logout-content">
+        <h2>Log Out</h2>
+        <p>Are you sure, you want to log out?</p>
+       <a href="myprof.html"><button class="logout-btn">Yes, Logout</button></a> 
+      </div>
+    </div>
+  </section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo Column -->
+    <div class="footer-col">
+      <img src="Images/Gympossible _ Snapchat 1.png" alt="Fitness Logo">
+    </div>
+
+    <!-- About Us Column -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Success</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Features Column -->
+    <div class="footer-col">
+      <h3>Feature</h3>
+      <ul>
+        <li><a href="#">HIIT</a></li>
+        <li><a href="#">Strength Yoga</a></li>
+        <li><a href="#">Cardio</a></li>
+        <li><a href="#">Cycling</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social Column -->
+    <div class="footer-col">
+      <h3>Contact & Social</h3>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Fitness@Fitnesscenter.com</p>
+     </div>
+<div class="footer-col">
+   <img src="Images/Gympossible _ Snapchat 2.png" alt="dumbbell" class="footer-image">
+
+   
+      <h4>Follow Us On :</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Fitness center. All rights reserved.</p>
+    <div class="policy-links">
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const profilePic = document.getElementById("profilePic");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    profilePic.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!dropdownMenu.contains(e.target) && e.target !== profilePic) {
+        dropdownMenu.classList.remove("active");
+      }
+    });
+
+    const bellIcon = document.querySelector(".fa-bell");
+    const notificationBox = document.getElementById("notificationBox");
+
+    bellIcon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      notificationBox.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!notificationBox.contains(e.target) && !bellIcon.contains(e.target)) {
+        notificationBox.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
